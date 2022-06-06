@@ -1,19 +1,21 @@
 {
-  "name": "souscription-node-back",
+  "name": "js-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Serverless Cloud JavaScript API template",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "cloud",
+    "test": "cloud test"
   },
-  "author": "",
-  "license": "ISC",
+  "devDependencies": {
+    "@serverless/cloud": "^2.0.0"
+  },
+  "serverless": {
+    "app": "sls-contract",
+    "org": "mohamedaliznidi"
+  },
   "dependencies": {
-    "body-parser": "^1.19.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.0",
-    "express": "^4.17.3",
-    "mongoose": "^6.2.7",
-    "nodemon": "^2.0.15"
+    "mongodb": "^4.6.0"
   }
 }
